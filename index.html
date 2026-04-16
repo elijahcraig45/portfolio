@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Henry Craig - Senior Software Engineer | Data Engineering | Machine Learning | Full-Stack Development">
 
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -21,22 +22,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Henry Craig | Software Engineer</title>
+    <title>Henry Craig | Senior Software Engineer | Data Engineering | ML</title>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-      <h1>Henry Craig</h1>
+      <h1>HC</h1>
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="https://frontend-dot-hankstank.uc.r.appspot.com/" target="_blank">Baseball Analytics</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Featured Projects</a></li>
+        <li><a href="#skills" class="nav-link">Tech Stack</a></li>
+        <li><a href="resume_2026_final.pdf" target="_blank" class="nav-link resume-link">Resume</a></li>
       </ul>
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
       </button>
     </nav>
     
@@ -50,54 +51,139 @@
         class="hero-img"
       />
       <div class="bio animate__animated">
-        <h2 class="bio-title">About Me</h2>
+        <h2 class="bio-title">Senior Software Engineer</h2>
         <p class="bio-text">
-          I am a software engineer, coffee enthusiast, musician, and data nerd. 
-          I am currently avaliable for work while I continue to develop my skills and practice what I love. 
+          Full-stack engineer with expertise in <strong>data engineering</strong>, <strong>machine learning</strong>, and <strong>cloud infrastructure</strong>. 
+          I build production-grade systems that combine real-time data pipelines, predictive models, and scalable APIs.
         </p>
+        <div class="cta-buttons">
+          <a href="https://frontend-dot-hankstank.uc.r.appspot.com/" target="_blank" class="cta-primary">View MLB Analytics Platform</a>
+          <a href="resume_2026_final.pdf" target="_blank" class="cta-secondary">Download Resume</a>
+        </div>
       </div>
     </section>
 
     <!-- More about -->
     <section class="more-about">
-      <h2>More About Me</h2>
-      <p>I graduated in 2023 from the Georgia Institute of Technology with a Bachelor of Science in Computer Science. I concentrated in People and Media, which has equipped me with valuable skills in leadership, problem solving, attention to detail, critical thinking, and public speaking.
-
-        I have experience working in different industries, including software engineering, live event production, civil engineering, and academic research. I have worked with various tools and languages, such as Python, Git, ReactJS, GraphQL, Java, C, SQL, and Google Cloud Platform. I have also used my musical talents in Alto Saxophone, Guitar, Bass, Piano, and Banjo to engage with my community.
-        
-        </p>
+      <h2>Who I Am</h2>
+      <p>
+        I'm a Computer Science graduate from Georgia Tech with a passion for building data-driven systems at scale. 
+        With experience across software engineering, data analytics, and machine learning, I specialize in designing architectures 
+        that turn raw data into actionable insights.
+      </p>
+      <p>
+        My recent work focuses on production ML systems, cloud infrastructure, and full-stack development. 
+        I'm most excited about problems involving data pipelines, real-time analytics, and high-performance APIs.
+      </p>
+      <div class="expertise-grid">
+        <div class="expertise-item">
+          <h3>Data Engineering</h3>
+          <p>Building ETL pipelines, data warehousing with BigQuery, and real-time data processing</p>
+        </div>
+        <div class="expertise-item">
+          <h3>Machine Learning</h3>
+          <p>Feature engineering, ensemble models (XGBoost, LightGBM), and production inference pipelines</p>
+        </div>
+        <div class="expertise-item">
+          <h3>Full-Stack Development</h3>
+          <p>React frontends, TypeScript/Node.js backends, and cloud deployment on Google Cloud Platform</p>
+        </div>
+        <div class="expertise-item">
+          <h3>Cloud & DevOps</h3>
+          <p>Google Cloud App Engine, Cloud Functions, Cloud Scheduler, and CI/CD automation</p>
+        </div>
+      </div>
     </section>
 
     <!-- Projects section -->
     <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <h2 class="projects-title">Featured Work</h2>
+      
+      <!-- Flagship Project -->
+      <div class="flagship-project">
+        <div class="flagship-content">
+          <h3 class="flagship-title">Hank's Tank — MLB Analytics Platform</h3>
+          <p class="flagship-desc">
+            A production-grade, full-stack MLB analytics platform showcasing data engineering, machine learning, and cloud architecture at scale. 
+            Three interconnected services processing 35,000+ historical records and daily real-time predictions.
+          </p>
+          
+          <div class="project-components">
+            <div class="component">
+              <h4>⚾ Frontend (React SPA)</h4>
+              <p>
+                Real-time dashboard with live game strike zones, player statistics, team comparisons, and D3-powered visualizations. 
+                Features AI-assisted analysis and game predictions with 57.65% accuracy.
+              </p>
+              <span class="tech-tags">React 18 • Bootstrap 5 • D3 • Recharts • App Engine</span>
+            </div>
+            
+            <div class="component">
+              <h4>🔌 Backend API (TypeScript/Express)</h4>
+              <p>
+                REST API serving 35,000+ historical MLB records from BigQuery, real-time data from MLB Stats API, 
+                and daily ML predictions. Implements caching, deduplication, and request optimization.
+              </p>
+              <span class="tech-tags">TypeScript • Express • BigQuery • App Engine • Cron Jobs</span>
+            </div>
+            
+            <div class="component">
+              <h4>🤖 ML Pipeline (Python)</h4>
+              <p>
+                End-to-end ML workflow: feature engineering (113 features), model training with XGBoost/LightGBM ensemble, 
+                and daily Cloud Function inference. Validates temporal splits to prevent leakage.
+              </p>
+              <span class="tech-tags">Python • XGBoost • LightGBM • CatBoost • Cloud Functions • BigQuery</span>
+            </div>
+          </div>
+          
+          <div class="project-stats">
+            <div class="stat">
+              <span class="stat-number">57.65%</span>
+              <span class="stat-label">Model Accuracy (2025 Holdout)</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">35K+</span>
+              <span class="stat-label">Historical Records</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">113</span>
+              <span class="stat-label">Engineered Features</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Integrated Services</span>
+            </div>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://frontend-dot-hankstank.uc.r.appspot.com/" target="_blank" class="project-link-primary">Live Platform →</a>
+            <a href="https://github.com/elijahcraig45/hanks_tank" target="_blank" class="project-link-secondary">Frontend Repo</a>
+            <a href="https://github.com/elijahcraig45/hanks_tank_backend" target="_blank" class="project-link-secondary">Backend Repo</a>
+            <a href="https://github.com/elijahcraig45/hanks_tank_ml" target="_blank" class="project-link-secondary">ML Repo</a>
+          </div>
+        </div>
+        <img src="assets/images/baseballPage.png" alt="MLB Analytics Dashboard" class="flagship-img" loading="lazy" />
+      </div>
+
+      <h3 class="projects-divider">Other Projects</h3>
       <div class="projects-container">
         <div class="project-container project-card">
-          <img
-            src="assets/images/baseballPage.png"
-            alt="Baseball Dashboard"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Baseball Data Dashboard</h3>
-          <p class="project-details">
-            React and GCP powered MLB Statistics dashboard. Features live updating data from Fangraphs and BaseballReference. Currently in progress. 
-          </p>
-          <a href="https://frontend-dot-hankstank.uc.r.appspot.com/" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        
-        <div class="project-container project-card">
+          <div class="project-card-header">
+            <h3 class="project-title">Floral Portfolio</h3>
+            <span class="project-year">2023</span>
+          </div>
           <img
             src="assets/images/Portfolio.png"
-            alt="Weather App"
+            alt="Floral Portfolio Website"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Floral Portfolio</h3>
           <p class="project-details">
-            Elagently designed portfolio site for a local florist. 
+            Elegantly designed responsive portfolio website for a local florist. Built with HTML/CSS/JavaScript.
           </p>
-          <a href="https://elijahcraig45.github.io/talentee/" target="_blank" class="project-link">Check it Out</a>
+          <div class="project-tech">React • Responsive Design</div>
+          <a href="https://elijahcraig45.github.io/talentee/" target="_blank" class="project-link">View Site →</a>
         </div>
       </div>
     </section>
@@ -105,102 +191,133 @@
 
       <!-- Skills section -->
       <section class="skills" id="skills">
-        <h2 class="skill-header">My Top Skills</h2>
+        <h2 class="skill-header">Tech Stack & Expertise</h2>
   
-        <div class="skills-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <img
-              src="assets/icons/googleCloud.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/kubernetes.png"
-              alt="python"
-              loading="lazy"
-              class="icon icon-card"
-            />
-            
-            <img
-              src="assets/icons/spring.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3 class="category-title">Data Engineering</h3>
+            <div class="skills-wrapper">
+              <span class="skill-badge">BigQuery</span>
+              <span class="skill-badge">ETL/ELT Pipelines</span>
+              <span class="skill-badge">Data Validation</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Apache Spark</span>
+            </div>
           </div>
-  
-          <div class="second-set animate__animated animate__pulse">
-            <img
-              src="assets/icons/icons8-javascript.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/icons8-react-native.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/icons8-git.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
+
+          <div class="skill-category">
+            <h3 class="category-title">Machine Learning</h3>
+            <div class="skills-wrapper">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">XGBoost</span>
+              <span class="skill-badge">LightGBM</span>
+              <span class="skill-badge">scikit-learn</span>
+              <span class="skill-badge">Feature Engineering</span>
+              <span class="skill-badge">Model Validation</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">Backend Development</h3>
+            <div class="skills-wrapper">
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">Node.js/Express</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">GraphQL</span>
+              <span class="skill-badge">Java</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">Frontend Development</h3>
+            <div class="skills-wrapper">
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">React Hooks</span>
+              <span class="skill-badge">D3.js</span>
+              <span class="skill-badge">Bootstrap</span>
+              <span class="skill-badge">CSS3/SCSS</span>
+              <span class="skill-badge">Recharts</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">Cloud & DevOps</h3>
+            <div class="skills-wrapper">
+              <span class="skill-badge">Google Cloud Platform</span>
+              <span class="skill-badge">App Engine</span>
+              <span class="skill-badge">Cloud Functions</span>
+              <span class="skill-badge">Cloud Scheduler</span>
+              <span class="skill-badge">Git/GitHub</span>
+              <span class="skill-badge">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">Tools & Practices</h3>
+            <div class="skills-wrapper">
+              <span class="skill-badge">Testing & QA</span>
+              <span class="skill-badge">Debugging</span>
+              <span class="skill-badge">Linux/CLI</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Agile/Scrum</span>
+            </div>
           </div>
         </div>
       </section>
-      
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylnggw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+
+    <!-- Experience section -->
+    <section class="experience" id="experience">
+      <h2 class="experience-title">Professional Experience</h2>
+      <div class="experience-container">
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-role">Full-Stack Data Engineer (Self-Directed)</h3>
+            <span class="experience-date">2024 – Present</span>
+          </div>
+          <p class="experience-company">Hank's Tank MLB Analytics Platform</p>
+          <ul class="experience-details">
+            <li>Built production ML pipeline processing 35,000+ historical records with 113 engineered features achieving 57.65% prediction accuracy</li>
+            <li>Architected unified data platform combining BigQuery, Cloud Functions, and Cloud Scheduler for daily inference automation</li>
+            <li>Developed TypeScript/Express REST API serving real-time and historical MLB data with request deduplication and caching</li>
+            <li>Created interactive React SPA with D3 visualizations, real-time strike zones, and advanced analytics dashboards</li>
+            <li>Deployed full stack to Google Cloud App Engine with CI/CD automation and monitoring</li>
+          </ul>
         </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-role">Software Engineer & Data Analyst</h3>
+            <span class="experience-date">2023 – 2024</span>
+          </div>
+          <p class="experience-company">Various Projects & Internships</p>
+          <ul class="experience-details">
+            <li>Designed and deployed responsive web applications using React and modern JavaScript frameworks</li>
+            <li>Built data pipelines and performed statistical analysis on large datasets using Python and SQL</li>
+            <li>Collaborated on production systems using Git, CI/CD workflows, and agile methodologies</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-role">B.S. in Computer Science</h3>
+            <span class="experience-date">2019 – 2023</span>
+          </div>
+          <p class="experience-company">Georgia Institute of Technology</p>
+          <ul class="experience-details">
+            <li>Concentration in People and Media with coursework in machine learning, data structures, systems, and software engineering</li>
+            <li>Developed strong foundations in problem-solving, critical thinking, and collaborative development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Let's Connect</h2>
+      <p class="contact-intro">I'm open to discussing data engineering, machine learning, and full-stack development opportunities. Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/henry-e-craig/" target="_blank" class="contact-link">LinkedIn</a>
+        <a href="https://github.com/elijahcraig45" target="_blank" class="contact-link">GitHub</a>
+        <a href="https://twitter.com/HenryeCraig" target="_blank" class="contact-link">Twitter</a>
+        <a href="mailto:henry@example.com" class="contact-link">Email</a>
       </div>
     </section>
 
@@ -242,15 +359,10 @@
 
     <!-- Footer section -->
     <footer>
-      
       <p class="copy">
-        Built with: by Henry Craig <br />
-        Based off of template by 
-        <a href="https://twitter.com/koladechris" target="_blank"
-          >Kolade Chris (Ksound)</a
-        >
+        Henry Craig | Senior Software Engineer | Data Engineering • ML • Full-Stack
       </p>
-      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">&copy; 2026. All rights reserved.</p>
     </footer>
 
     <!-- Website scripts -->
